@@ -11,22 +11,28 @@
 
 		<view class="menu">
 
-			<view class="menu-item">
-				<image class="image-icon" src="../../static/img/ic_person_transfer.png"></image>
-				<text class="text-item">我的信息</text>
-				<image class="image-icon" src="../../static/img/profile-icon-profile@3x.png"></image>
+			<view>
+				<navigator class="menu-item" url="../person/person">
+					<image class="image-icon" src="../../static/img/ic_person_transfer.png"></image>
+					<text class="text-item">我的信息</text>
+					<image class="image-icon" src="../../static/img/profile-icon-profile@3x.png"></image>
+				</navigator>
 			</view>
 			<hr />
-			<view class="menu-item">
-				<image class="image-icon" src="../../static/img/ic_phone.png"></image>
-				<text class="text-item">我的信息</text>
-				<image class="image-icon" src="../../static/img/profile-icon-profile@3x.png"></image>
+			<view>
+				<navigator class="menu-item" url="../person/person">
+					<image class="image-icon" src="../../static/img/ic_phone.png"></image>
+					<text class="text-item">我的信息</text>
+					<image class="image-icon" src="../../static/img/profile-icon-profile@3x.png"></image>
+				</navigator>
 			</view>
 			<hr />
-			<view class="menu-item">
-				<image class="image-icon" src="../../static/img/ic_police_network.png"></image>
-				<text class="text-item">我的信息</text>
-				<image class="image-icon" src="../../static/img/profile-icon-profile@3x.png"></image>
+			<view>
+				<navigator class="menu-item" url="../person/person">
+					<image class="image-icon" src="../../static/img/ic_police_network.png"></image>
+					<text class="text-item">我的信息</text>
+					<image class="image-icon" src="../../static/img/profile-icon-profile@3x.png"></image>
+				</navigator>
 			</view>
 			<hr>
 		</view>
@@ -55,10 +61,13 @@
 			}
 		},
 		onLoad() {
-
+			this.getss();
 		},
 		methods: {
+			getss() {
+				const height = uni.getSystemInfoSync().statusBarHeight;
 
+			}
 		}
 	}
 </script>
@@ -91,7 +100,7 @@
 
 	.head-text-name {
 		font-weight: bold;
-		font-size: 20px;
+		font-size: 24px;
 		height: 30px;
 		height: 30px;
 		color: #FFFFFF;

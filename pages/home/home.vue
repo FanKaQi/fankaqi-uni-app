@@ -89,13 +89,13 @@
 	}
 
 	.swiper {
-		height: 200px;
+		height: 240px;
 
 	}
 
 	swiper-item image {
 		width: 100%;
-		height: 200px;
+		height: 240px;
 	}
 
 	.menu {

@@ -13,8 +13,8 @@
 			"path": "pages/home/home",
 			"style": {
 				"navigationBarTitleText": "首页",
-				"navigationBarTextStyle":"white",
-				"navigationBarBackgroundColor":"#00DCDC",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#00DCDC",
 				"app-plus": {
 					"bounce": "none",
 					"titleNView": false
@@ -32,7 +32,13 @@
 
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/person/person",
+            "style" : {
+				"navigationBarTitleText": "我的"
+			}
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
@@ -43,15 +49,15 @@
 	"tabBar": {
 		"color": "#162d5a",
 		"selectedColor": "#54D8D7",
-		"fontSize":"13px",
-		"height":"55px",
+		"fontSize": "13px",
+		"height": "55px",
 		"backgroundColor": "#FFFFFF",
 		"list": [{
 				"pagePath": "pages/home/home",
 				"iconPath": "./static/img/ic_home.png",
 				"selectedIconPath": "static/img/ic_home_select.png",
 				"text": "首页",
-				"fontSize":"14px"
+				"fontSize": "14px"
 			},
 			{
 				"pagePath": "pages/my/my",
