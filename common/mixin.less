@@ -1,0 +1,30 @@
+.bg-image(@url){
+	@imgx2:%("%s@2x.png", @url);
+	@imgx3:%("%s@3x.png", @url);
+	background-image: url(@imgx2);
+	@media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3) {
+        background-image: url(@imgx3);
+    }
+}
+
+.thin-border-bottom(){
+	&::after{
+		height: 1px;
+		display: block;
+		background:#d3deea;
+		content: '';
+		transform: scaleY(.5);
+	}
+}
+.thin-border-top(){
+	&::before{
+		height: 1px;
+		display: block;
+		background:#d3deea;
+		content: '';
+		transform: scaleY(.5);
+		width: 100%;
+		position: absolute;
+		left: 0;
+	}
+}
