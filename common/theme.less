@@ -1,12 +1,57 @@
-.primary{
-	color: 00DCDC;
+/**
+ * 全局样式配置
+ */
+
+//主题色
+@themeColor: #41cdc8;
+//文本
+@textColor:#162d5a;
+//标题
+@titleTextColor:@themeColor;
+//背景色
+@backgroundColor:#f4f6f9;
+//分割线
+@lineColor:#efefef;
+
+.theme-color{
+  color: @themeColor;
 }
-@primary-color:00DCDC;
+
 /*按钮系列*/
 .btn-base{
-  color: #fff;
-  height: 100upx;
-  line-height: 100upx;
-  border-radius: 8.33upx;
+  color: #ffffff;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 8.33rpx;
   text-align: center;
+}
+
+.text{
+	color: @textColor;
+	font-size: 32rpx;
+}
+.textCustom{
+	color: @textColor;
+	font-size: 32rpx;
+}
+
+.textBold{
+	color: @textColor;
+	font-weight: bold;
+	font-size: 32rpx;
+}
+
+//横线
+.line{
+	margin-left: 30rpx;
+	margin-right: 30rpx;
+	height: 1rpx;
+	background-color: @lineColor;
+	border: 0rpx;
+}
+
+.lineCustom{
+	height: 1rpx;
+	background-color: @lineColor;
+	border: 0rpx;
 }

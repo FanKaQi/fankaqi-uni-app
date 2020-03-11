@@ -14,27 +14,27 @@
 			<view>
 				<navigator class="menu-item" url="../person/person">
 					<image class="image-icon" src="../../static/img/ic_person_transfer.png"></image>
-					<text class="text-item">我的信息</text>
+					<text class="text">我的信息</text>
 					<image class="image-icon" src="../../static/img/profile-icon-profile@3x.png"></image>
 				</navigator>
 			</view>
-			<hr />
+			<hr class = "line">
 			<view>
 				<navigator class="menu-item" url="../person/person">
 					<image class="image-icon" src="../../static/img/ic_phone.png"></image>
-					<text class="text-item">我的信息</text>
+					<text class="text">我的信息</text>
 					<image class="image-icon" src="../../static/img/profile-icon-profile@3x.png"></image>
 				</navigator>
 			</view>
-			<hr />
+			<hr class = "line">
 			<view>
 				<navigator class="menu-item" url="../person/person">
 					<image class="image-icon" src="../../static/img/ic_police_network.png"></image>
-					<text class="text-item">我的信息</text>
+					<text class="text">我的信息</text>
 					<image class="image-icon" src="../../static/img/profile-icon-profile@3x.png"></image>
 				</navigator>
 			</view>
-			<hr>
+			<hr class = "line">
 		</view>
 
 		<view class="button">去检查</view>
@@ -72,85 +72,76 @@
 	}
 </script>
 
-<style>
+<style lang="less">
+	@import "~@/common/theme.less";
+	
 	.content {
 		height: auto;
 		width: 100%;
 	}
 
 	.view-head {
-		height: 240px;
+		height: 500rpx;
 		background-color: #00DCDC;
 		display: flex;
-		padding-left: 30px;
+		padding-left: 60rpx;
 	}
 
 	.head-image {
 		border-radius: 50%;
-		width: 60px;
-		height: 60px;
+		width: 120rpx;
+		height: 120rpx;
 		margin: auto 0;
 	}
 
 	.head-text {
-		padding-left: 10px;
-		border-radius: 50%;
+		padding-left: 20rpx;
 		margin: auto 0;
+		font-size: 24rpx;
 	}
 
 	.head-text-name {
 		font-weight: bold;
-		font-size: 24px;
-		height: 30px;
-		height: 30px;
+		font-size: 48rpx;
+		height: 60rpx;
+		height: 60rpx;
 		color: #FFFFFF;
-		line-height: 30px;
+		line-height: 60rpx;
 	}
 
 	.head-text-role {
-		font-size: 12px;
-		height: 30px;
+		font-size: 30rpx;
 		color: #FFFFFF;
-		line-height: 30px;
+		line-height: 60rpx;
 	}
 
 	.menu {
-		border-radius: 20px 20px 0px 0px;
+		border-radius: 40rpx 40rpx 0rpx 0rpx;
 		background-color: #ffffff;
-		margin-top: -20px;
+		margin-top: -40rpx;
 		position: fixed;
-		padding-top: 50px;
+		padding-top: 100rpx;
 		width: 100%;
 	}
 
 	.menu-item {
-		padding-left: 20px;
-		padding-right: 20px;
-		height: 60px;
+		padding-left: 40rpx;
+		padding-right: 40rpx;
+		height: 140rpx;
 		display: flex;
 
 	}
 
 	.image-icon {
-		width: 24px;
-		height: 20px;
+		width: 48rpx;
+		height: 40rpx;
 		margin: auto 0;
 	}
 
-	.text-item {
-		font-size: 16px;
+	.text{
 		width: 100%;
-		color: #00083D;
 		margin: auto 0;
-		padding-left: 10px;
+		padding-left: 30rpx;
 	}
 
-
-	hr {
-		background-color: #e8e8e8;
-		margin-left: 20px;
-		margin-right: 20px;
-		height: 1px;
-		border: 0px;
-	}
 </style>
